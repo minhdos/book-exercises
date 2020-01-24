@@ -26,20 +26,22 @@ dinner <- list(
   drink = "boba"
 )
 
-meal <- c(my_breakfast, my_lunch, dinner)
+meal <- list(breakfast = my_breakfast, lunch = my_lunch, dinner = dinner)
 
 # Use dollar notation to extract your `dinner` element from your list
 # and save it in a vector called 'dinner'
 dinners <- meal$dinner
-
+print(dinners)
 
 # Use double-bracket notation to extract your `lunch` element from your list
 # and save it in your list as the element at index 5 (no reason beyond practice)
 
-my_lunch[[5]]
+meal[[5]] <- meal[["lunch"]]
+print(meal)
+
 # Use single-bracket notation to extract your breakfast and lunch from your list
 # and save them to a list called `early_meals`
-early_meals <- c(my_breakfast, my_lunch)
+early_meals <- meal[c("breakfast", "lunch")]
 
 
 ### Challenge ###
