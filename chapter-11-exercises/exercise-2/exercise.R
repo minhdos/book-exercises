@@ -5,6 +5,7 @@
 # Install and load the "fueleconomy" package
 #install.packages("devtools")
 #devtools::install_github("hadley/fueleconomy")
+install.packages("dplyr")
 library(fueleconomy)
 
 # Install and load the "dplyr" library
@@ -12,7 +13,7 @@ library(fueleconomy)
 
 # Select the different manufacturers (makes) of the cars in this data set. 
 # Save this vector in a variable
-
+select(vehicles, makes)
 
 # Use the `distinct()` function to determine how many different car manufacturers
 # are represented by the data set
