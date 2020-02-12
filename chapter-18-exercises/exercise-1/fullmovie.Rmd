@@ -1,0 +1,17 @@
+---
+title: "Movie Review"
+author: "Minh tu Huynh"
+date: "2/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("exercise.R")
+```
+
+## Link
+
+
+```{r link_markdown}
+link_markdown <- paste(['Link to the full movie'](http://www.nytimes.com/2020/01/28/movies/beanpole-review.html))
+```
